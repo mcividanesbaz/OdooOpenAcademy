@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
+from openerp import models, fields, api
 
-    from openerp import models
-    class MinimalModel(models.Model):
-    _name = 'test.model'
+class Course(models.Model):
+    _name = 'openacademy.course'
+
+    name = fields.Char(string="Title", required=True)
+    description = fields.Text()
 
 #     name = fields.Char()
 #     value = fields.Integer()
