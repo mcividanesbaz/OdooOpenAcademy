@@ -11,6 +11,14 @@
                             <field name="name"/>
                             <field name="responsible_id"/>
                         </group>
+                           <page string="Sessions">
+                                <field name="session_ids">
+                                    <tree string="Registered sessions">
+                                        <field name="name"/>
+                                        <field name="instructor_id"/>
+                                    </tree>
+                                </field>
+                           </page>
                     </sheet>
                 </form>
             </field>
